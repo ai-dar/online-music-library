@@ -14,18 +14,18 @@
 
 ## 1. Клонирование репозитория  
 Склонируйте проект на свой компьютер:  
-    ``` sh
+  ```sh
       git clone https://github.com/yourusername/online-music-library.git
       cd online-music-library
-    ```
+  ```
 ## 2. Установка зависимостей
-    ``` sh
+  ```sh
       go mod tidy
-    ```
+  ```
 ## 3. Запуск сервера
-    ``` sh
+  ```sh
       go run cmd/main.go
-    ```
+  ```
 ### Сервер будет запущен на http://localhost:8080.
 
 ## API Эндпоинты
@@ -35,9 +35,8 @@
 ### Описание: Возвращает список всех доступных песен
 
 ### Ответ:
-json
-    ```
-      [
+```json
+   [
         {
           "id": 1,
           "group": "Imagine Dragons",
@@ -49,7 +48,7 @@ json
           "updated_at": "2025-03-11T20:24:35.0504698+05:00"
         }
       ]
-    ```
+```
 ## 2. Добавление новой песни
 ### Метод: POST
 ### URL: /songs
@@ -85,16 +84,14 @@ json
   DELETE /songs/1
   ```
 ### Ответ:
-  ```
-  json
+  ```json
   {
     "message": "Песня удалена"
   }
   ```
 # Документация API
 ## Swagger-документация доступна по адресу:
-  ```
-  bash
+  ```bash
   http://localhost:8080/swagger/index.html
   ```
 ### Используемые технологии
